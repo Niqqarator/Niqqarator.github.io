@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>survey form </title>
+<link rel="stylesheet" href="/Survey-form/Survey-form.Css">
+</head>
+<body>
+  <div class="container">
+  <header> 
+    <h1 id="title">Buenos Aires</h1>
+  <p id="description">! Gracias por visitar la ciudad de la furia ¡</p>
+  </header>
+  <form id="survey-form">
+
+  <div class="form-group">
+   <label id="name-label">
+     Nombre</label>
+   <input type="text" id="name" placeholder="Name" required>
+   </input>
+   
+   </div>
+    <div class="form-group"> 
+   <label id="email-label">
+    Correo electronico
+    </label>
+    <input type="email" id="email" required placeholder="Email">
+     </input>
+     </div>
+
+    <div class="form-group">
+    <label id="number-label">
+    Edad</label><input type="number" id="number" required min="10" max="80" placeholder="Your age">
+    </input>
+    
+    </div>
+
+    <div class="form-group">
+   
+      <legend>¿Cual es tu genero?</legend>
+      <select id="dropdown">
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+  <fieldset>
+    <legend id="turistico"> ¿Cual fue tu sitio turistico favorito?</legend> 
+    <label id="sitio-turistico">
+    <input class="sitio-turistico" type="radio" name="sitio-turistico" value="obelisco" />Obelisco</label>
+
+    <label id="sitio-turistico">
+    <input class="sitio-turistico" type="radio" name="sitio-turistico" value="teatro-colon" /> Teatro Colón</label>
+    <label id="sitio-turistico">
+    <input class="sitio-turistico" type="radio" name="sitio-turistico" value="plaza-de-mayo"/>Plaza de mayo</label>
+    <label id="sitio-turistico">
+    <input class="sitio-turistico" type="radio" name="sitio-turistico" value="jardin-japones"/>Jardin Japones</label>
+    <label id="sitio-turistico">
+    <input class="sitio-turistico" type="radio" name="sitio-turistico" value="Otro"/>Otro</label>
+    
+  </fieldset>
+  </div>
+
+
+  <div class="form-group">
+  <fieldset>
+    <legend id="plato-legend">¿Cual fue tu plato favorito? </legend>
+    <label id="plato">
+    <input type="checkbox" class="plato" required value="Choripan">Choripan</label>
+
+   <label id="plato"> <input type="checkbox" class="plato" required value="Asado Argentino">Asado Argentino</label>
+   <label id="plato">
+    <input type="checkbox" class="plato" required value="Milanesa con fritas">Milanesa con fritas</label>
+    <label id="plato">
+    <input type="checkbox" class="plato" required value="Empanadas argentinas">Empanadas argentinas</label>
+     <label id="plato">
+    <input type="checkbox" class="plato" required value="otro">Otro</label>
+
+
+  </label>
+  </fieldset>
+  </div>
+  
+  <div class="form-group">
+    <legend class="comentarios">¿Alguna idea o sugerencia?</legend>
+<textarea id="comments" placeholder="Deja aqui tus comentarios">
+  
+</textarea>
+</div>
+
+<div class="form-group">
+<input type="submit" id="submit"/>
+</div>
+</form>
+</div>
+</body>
